@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Number Guesser</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1 id="title">Number Guesser!</h1>
+        <h2 id="round">Round 1</h2>
+        <h3 id="targetNumber">Target Number:?</h3>
+        
+        
+        <div id="guessDisplayArea">
+            
+    
+            <div id="computerGuessDisplayArea">
+                <p class="player">Computer</p>
+                <p class="score" id="computerScore">Score:0</p>
+                
+                <div id="computerGuessContainer">
+                    <p id="computerGuess">
+                        ?
+                    </p>  
+                </div>
+                <div id="computerWinsContainer">
+                    <p id="computerWinsMessage"></p>
+                </div>  
+            </div>
+
+            
+            
+            <div id="playerGuessDisplayArea">
+                <p class="player">You</p>
+                <p class="score" id="playerScore">Score:0</p>
+                
+                <div id="playerGuessContainer">
+                    <p id="playerGuess">0</p>
+                </div>
+
+                <div id="playerGuessButtonContainer">
+                        <button id="playerGuessButtonSubstract" onclick="substractNumber()">
+                            -
+                        </button>
+
+                        <button id="playerGuessButtonAdd" onclick="addNumber()">
+                            +
+                        </button>
+                </div>
+
+                <div id="makeGuessContainer">
+                    <button id="makeGuessButton" onclick="calculateWinner()">
+                        Make a Guess
+                    </button>
+                </div>
+
+
+            </div>
+
+
+
+        
+        
+        </div>
+
+        
+        
+        <div id="nextRoundButtonContainer">
+        <button id="nextRoundButton" disabled onclick="prepareNextRound()">
+            Next Round
+        </button>
+        </div>
+
+        <div id="drawMessageContainer">
+            <p id="drawMessage"></p>
+        </div>
+
+
+        <div id="gameInstructions">
+            <div class="steps">
+                <p class="stepTitle">
+                    Step 1
+                </p>
+                <p class="stepsInstructions">
+                    Input a number between 0 and 9
+                </p>
+            </div>
+            <div class="steps">
+                <p class="stepTitle">
+                    Step 2
+                </p>
+                <p class="stepsInstructions">
+                    Click "Make a Guess" to
+                    submit your guess and see 
+                    who won the round.
+                </p>
+            </div>
+            <div class="steps">
+                <p class="stepTitle">
+                    Step 3
+                </p>
+                <p class="stepsInstructions">
+                    Click "Next Round" to play again.
+                </p>
+            </div>
+        </div>
+
+
+    </body>
+</html>

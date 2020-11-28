@@ -1,0 +1,144 @@
+#title, #round, #targetNumber{
+text-align: center;
+}
+
+#guessDisplayArea{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height:300px;
+}
+
+#computerGuessDisplayArea{
+    border-style: solid;
+    border-width: thin;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+#computerGuessContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#computerGuess{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+#computerWinsContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+#computerWinsMessage{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#playerGuessDisplayArea{
+    border-style: solid;
+    border-width: thin;
+    padding: 20px;
+}
+
+#playerGuessButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#makeGuessContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#makeGuessButton{
+    margin-top:15px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+
+#makeGuessButton:active {
+    background-color: rgb(58, 112, 173);
+  }
+
+#makeGuessButton:disabled {
+    background-color: rgb(166, 178, 192);
+}
+
+
+.player,.score{
+    text-align: center;
+    margin: 0;
+}
+
+#playerGuessContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playerGuess{
+    border-style: solid;
+    border-width: thin;
+    padding: 25px;
+}
+
+#nextRoundButtonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nextRoundButton {
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+#drawMessageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#drawMessage{
+color:rgb(68, 143, 68);
+font-size: 30px;
+font-weight: bold;
+}
+
+
+#gameInstructions{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.stepTitle{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.stepsInstructions{
+    text-align: center;
+    margin-top: 0;
+    font-size: 12px;
+}
